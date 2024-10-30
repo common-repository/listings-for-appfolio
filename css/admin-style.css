@@ -1,0 +1,100 @@
+/*
+* Style File for admin area
+*/
+.admin-fltrs span{
+	margin-right: 10px;
+}
+td .more-options{
+	margin-left: 10px;
+}
+.wp-picker-container{
+	line-height: 2.5;
+}
+
+#apfl_slider_cnt{
+	width: 50px;
+	padding-right: 1px;
+}
+tr.slide_tr input, #apfl_slider_lst_page, #apfl_crsl_lst_page{
+    min-width: 300px;
+}
+
+/* Tooltip */
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+.tooltip:after {
+	content: "\f14c";
+    font-family: dashicons;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: bottom;
+}
+.tooltip .tooltiptext {
+	visibility: hidden;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	padding: 5px;
+	border-radius: 5px;
+	position: absolute;
+	z-index: 1;
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+	opacity: 1;
+}
+
+
+#apfl_slider_sbmt{
+	height: 28px;
+	margin-left: 10px;
+}
+
+/* Customizer tab */
+.apfl_tab-container{
+    margin-right: 2%;
+    margin-top: 3%;
+    height: 30px;
+    border-bottom: 1px solid #adb5bd;
+}
+.apfl_tab-container .tabs{
+    border: 1px solid #adb5bd;
+    border-bottom: none;
+    padding: 8px 10px;
+    background-color: #dcdcde;
+    margin-left: 0.5rem;
+    font-size: 15px;
+    color: #50575e;
+    text-decoration: none;
+    font-weight: 600;
+    line-height: 1.71428571;
+    white-space: nowrap;
+    margin-bottom: -1px;
+}
+.tabs.apfl_active{
+    background-color: #f0f0f1;
+    color: #000;
+    border-bottom: 1px solid #f0f0f1;
+}
+.tabs.apfl_active:focus{
+    box-shadow: none;
+    outline: none;
+}
